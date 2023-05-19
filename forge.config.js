@@ -1,6 +1,7 @@
 module.exports = {
   packagerConfig: {
-    icon: './images/prog-brow'
+    icon: './images/prog-brow',
+    extendInfo: 'lib/Info.plist',
   },
   rebuildConfig: {},
   makers: [
