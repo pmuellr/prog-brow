@@ -1,14 +1,13 @@
+#!/usr/bin/env node
+
 import { getCliParams } from './lib/cli-params.mjs'
 import { createRenderers } from './lib/renderers.mjs'
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  main()
-}
+cli()
 
-async function main() {
-  const { pkg, files } = getCliParams()
+export async function cli() {
+  const { files } = getCliParams(import.meta)
   const renderers = createRenderers()
-
 
   for (const file of files) {
     const result = await renderers.render(file)
@@ -17,4 +16,6 @@ async function main() {
     console.log(`---`)
     console.log(``)
   }
+
+  process.exit()
 }

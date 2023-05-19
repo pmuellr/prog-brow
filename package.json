@@ -4,11 +4,13 @@
   "description": "programmable browser",
   "author": "Patrick Mueller <pmuellr@apache.org> (https://github.com/pmuellr)",
   "license": "MIT",
-  "main": "prog-brow.mjs",
-  "type": "module",
+  "main": "prog-brow.js",
   "types": "./lib/types.ts",
   "bin": {
-    "prog-brow": "./prog-brow.mjs"
+    "prog-brow": "./prog-brow.js"
+  },
+  "scripts": {
+    "start": "electron ."
   },
   "homepage": "https://github.com/pmuellr/prog-brow",
   "repository": {
@@ -25,6 +27,7 @@
     "minimatch": "^9.0.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.31"
+    "@types/node": "^14.14.31",
+    "electron": "^24.3.1"
   }
 }
