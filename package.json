@@ -26,8 +26,10 @@
     "electron-squirrel-startup": "^1.0.0",
     "fastify": "^4.17.0",
     "markdown-it": "^13.0.1",
+    "markdown-it-prism": "^2.3.0",
     "meow": "^12.0.1",
-    "minimatch": "^9.0.0"
+    "minimatch": "^9.0.0",
+    "prismjs": "^1.29.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
