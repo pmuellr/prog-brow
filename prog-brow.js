@@ -25,7 +25,8 @@ function appReady() {
 function createWindow() {
   const win = new BrowserWindow({
     width: 800,
-    height: 600
+    height: 600,
+    icon: './images/prog-brow.png'
   })
 
   win.loadFile('./lib/loading.html')

@@ -10,7 +10,9 @@
     "prog-brow": "./prog-brow.js"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "homepage": "https://github.com/pmuellr/prog-brow",
   "repository": {
@@ -21,12 +23,18 @@
     "url": "https://github.com/pmuellr/prog-brow/issues"
   },
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
     "fastify": "^4.17.0",
     "markdown-it": "^13.0.1",
     "meow": "^12.0.1",
     "minimatch": "^9.0.0"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
     "@types/node": "^14.14.31",
     "electron": "^24.3.1"
   }
